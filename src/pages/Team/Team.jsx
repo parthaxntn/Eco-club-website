@@ -1,6 +1,6 @@
 import React from 'react'
-import TeamHeadPhoto from '../../components/TeamHeadPhoto/TeamHeadPhoto'
-import TeamWords from '../../components/TeamWords/TeamWords'
+import TeamHeadPhoto from '../../components/Team/TeamHeadPhoto/TeamHeadPhoto'
+import TeamWords from '../../components/Team/TeamWords/TeamWords'
 
 const Team = () => {
   return (
