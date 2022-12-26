@@ -3,13 +3,15 @@
     flex-direction: row;
     box-shadow: 0px 3px 7px #0003;
     height: 60px;
+    /* overflow: hidden; */
+    max-width: 100%;
 }
 
 .navbar .nav{
     display: flex;
     flex-direction: row;
     margin-left: auto;
-    padding: 0px 3rem;
+    padding: 0px 0rem;
     list-style: none;
 }
 
@@ -20,7 +22,7 @@
 }
 
 .navbar .nav li:hover{
-    color: black;
+    color: rgb(48, 151, 0);
 }
 
 .navbar .nav li a{
