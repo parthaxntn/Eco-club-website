@@ -1,0 +1,65 @@
+.containerT{
+    margin-top: 7em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container1{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 4em;
+}
+
+.container2{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 4em;
+}
+
+.container3{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 4em;
+}
+
+.from{
+    font-weight: 600;
+    font-size: 2.4vh;
+    width: 40vh;
+}
+
+.container1-left{
+    text-align: center;
+}
+
+.container2-right{
+    text-align: center;
+}
+
+.container3-left{
+    text-align: center;
+}
+
+.container1-right{
+    text-align:justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2-left{
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container3-right{
+    text-align: justify;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
