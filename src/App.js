@@ -11,6 +11,7 @@ import Gallery from './pages/Gallery/Gallery';
 import Events from './pages/Events/Events';
 import Blog from './pages/Blog/Blog';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/blog' element={<Blog />} />
           <Route path='/team' element={<Team />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
