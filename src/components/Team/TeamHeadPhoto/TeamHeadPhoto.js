@@ -1,5 +1,5 @@
 import React from 'react'
-import main from '../../Assets/main.png'
+import main from '../../../Assets/main.png'
 
 const TeamHeadPhoto = () => {
     return(

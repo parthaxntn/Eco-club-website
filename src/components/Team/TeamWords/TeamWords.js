@@ -1,7 +1,7 @@
 import React from 'react'
-import director from '../../Assets/director.svg' 
-import deansw from '../../Assets/deansw.svg'
-import facultyadv from '../../Assets/facultyadv.svg'
+import director from '../../../Assets/director.svg' 
+import deansw from '../../../Assets/deansw.svg'
+import facultyadv from '../../../Assets/facultyadv.svg'
 
 const TeamWords = () => {
     return (
