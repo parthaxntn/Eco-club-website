@@ -15,7 +15,7 @@ const TeamWords = () => {
                     <h4 id="designation1">Director , NIT SILCHAR</h4>
                 </div>
 
-                <div className="container1-right">
+                <div className="container1-right" style={{"fontWeight" :'500'}}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis perspiciatis, soluta, quasi quam ut
                     itaque cum tempore possimus vitae minima eligendi impedit doloribus quae quos laudantium. Libero commodi
                     consequuntur sequi, a ipsa suscipit quam quibusdam? Tempora aliquam repellendus eligendi tenetur
@@ -24,7 +24,7 @@ const TeamWords = () => {
             </div>
 
             <div className="container2">
-                <div className="container2-left">
+                <div className="container2-left"  style={{"fontWeight" :'500'}}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis perspiciatis, soluta, quasi quam ut
                     itaque cum tempore possimus vitae minima eligendi impedit doloribus quae quos laudantium. Libero commodi
                     consequuntur sequi, a ipsa suscipit quam quibusdam? Tempora aliquam repellendus eligendi tenetur
@@ -47,7 +47,7 @@ const TeamWords = () => {
                     <h4 id="designation1"> Faculty Advsior</h4>
                 </div>
 
-                <div className="container3-right">
+                <div className="container3-right"  style={{"fontWeight" :'500'}}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis perspiciatis, soluta, quasi quam ut
                     itaque cum tempore possimus vitae minima eligendi impedit doloribus quae quos laudantium. Libero commodi
                     consequuntur sequi, a ipsa suscipit quam quibusdam? Tempora aliquam repellendus eligendi tenetur
