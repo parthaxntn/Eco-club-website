@@ -1,0 +1,145 @@
+        .navbar-container {
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 60px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            position: relative;
+            left: 55px;
+            color: black;
+
+        }
+
+
+        a:hover {
+            color: rgb(51, 223, 51);
+        }
+
+        #club-name {
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            top: -10px;
+        }
+
+        #logo-img {
+
+            height: 26px;
+            width: 26px;
+            position: relative;
+            left: -35px;
+            top: 24px;
+            border: 0px;
+            border-radius: 16px;
+        }
+
+        header {
+            border: 0ch
+        }
+
+        .first {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            /* Noixorgo */
+
+
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 45.2539px;
+            line-height: 68px;
+            text-align: center;
+
+            color: #43AB5F;
+
+
+
+        }
+
+        h2,
+        h3 {
+            font-weight: 500;
+            font-size: 2rem;
+            color: #43AB5F;
+            text-align: center;
+            position: relative;
+            margin-bottom: 4.5rem;
+        }
+
+        h3::after {
+            content: '';
+            width: 4rem;
+            height: 3px;
+            background-color: #43AB5F;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h3 {
+            font-size: x-large;
+        }
+
+        h2 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        hr {
+            /* Line 1 */
+
+            width: 98px;
+            height: 0px;
+
+            border: 2px solid rgba(67, 171, 95, 0.8);
+
+
+        }
+
+        .para {
+            /* Noixorgo is a weekly segment released by the Eco Club every sunday, which gives an insight on different environmental matters that have transpired in that week. This is one of the oldest segments of the club and has been running for almost two years; educating and creating environmental awarness among it’s readers. A group of dedicated members from this club compile a set of fun and informative articles every week to captivate viewers, compelling them to know more of what is happening around them. This segment not only aims to promote environmental awarness, but also hopes to bring about an interest among the people and allure them to know more about our Mother Earth. */
+
+
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            padding: 0 5rem;
+
+            color: #888888;
+
+
+        }
+
+        @media (width<=700px){
+            .para{
+                padding: 0px 1rem;
+            }
+            .cs{
+                font-size: 30px !important;
+            }
+        }
+
+        .cs {
+            /*coming soon*/
+            font: italic 1.2em "Fira Sans", serif;
+            font-size: 50px;
+            color: #004a2f;
+            text-align: center;
+            margin-top: 6rem;
+        }
