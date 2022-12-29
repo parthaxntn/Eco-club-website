@@ -2,6 +2,7 @@
     margin-top: 6em;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 5%;
     color: rgb(50, 45, 45);
 }
 
@@ -28,7 +29,7 @@
 
 .from{
     font-weight: 600;
-    font-size: 2.4vh;
+    font-size: 1.4rem;
     width: 40vh;
 }
 
