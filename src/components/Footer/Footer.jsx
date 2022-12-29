@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import {FaEnvelope, FaFacebookF, FaInstagram, FaLocationArrow, FaMapMarkedAlt, FaMinus, FaPhoneAlt, FaTwitter} from "react-icons/fa";
+import {FaEnvelope, FaFacebookF, FaInstagram, FaLocationArrow, FaMapMarkerAlt, FaMinus, FaPhoneAlt, FaTwitter} from "react-icons/fa";
 
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
                 <div class="box1">
                     {/* <i class="fa-solid fa-location-dot"></i> */}
-                    <FaMapMarkedAlt color='rgba(5, 158, 5, 0.949)'/>
+                    <FaMapMarkerAlt color='rgba(5, 158, 5, 0.949)'/>
                     <a href="https://www.google.com/maps/place/National+Institute+Of+Technology,+Silchar/@24.7577144,92.7901042,17z/data=!3m1!4b1!4m5!3m4!1s0x374e49dcb63bae9b:0x81efa836714a289b!8m2!3d24.7577144!4d92.7922929" target="_blank">NIT SILCHAR</a>
                 </div>
                 <div class="box1">
