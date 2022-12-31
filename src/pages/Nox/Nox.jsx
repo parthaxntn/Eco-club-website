@@ -16,7 +16,7 @@ const Nox = () => {
             among the people and allure them to know more about our Mother Earth.</p>
         <p className="cs"><strong> Coming Soon . . .</strong> </p>
         </div>
-
+        
     // </div>
   )
 }
