@@ -7,7 +7,7 @@ import '../TeamWords/TeamWords.css'
 const TeamWords = () => {
     return (
         <div className="containerT">
-            <div className="container1">
+            <div className="containerTeam">
                 <div className="container1-left">
                     <h3 className="from">From Director's Desk</h3>
                     <img className="img1" src={director} alt="#"/>

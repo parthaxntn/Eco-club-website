@@ -1,4 +1,12 @@
-.Photos{ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* for 1st row of cards */
+
+.container-gallery{
+    margin: 4rem auto;
+}
+
+.container-gallery h2{
     font-weight: 500;
     font-size: 2rem;
     color: #43AB5F;
@@ -6,7 +14,8 @@
     position: relative;
     margin-bottom: 4.5rem;
 }
-.Photos::after{
+
+.container-gallery h2::after{
     content: '';
     width: 4rem;
     height: 3px;
@@ -16,8 +25,6 @@
     left: 50%;
     transform: translateX(-50%);
 }
-
-/* for 1st row of cards */
 
 .container1{
     padding: 2em;    
@@ -73,15 +80,6 @@
 
 /* overall styling */
 
-h2 { 
-    font-weight: 500;
-    font-size: 2.5rem;
-    color: #43AB5F;
-    text-align: center;
-    position: relative;
-    margin-bottom: 3rem;
-}
-
 .card{
     padding: .75em .75em .75em .75em;
     border-radius: 1.4em;
@@ -94,17 +92,6 @@ h2 {
 
 .card-img-top{
     border-radius: 5% 5% 0% 0%;
-}
-
-h2::after{
-    content: '';
-    width: 5rem;
-    height: 3px;
-    background-color: #43AB5F;
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .card-text{
@@ -137,16 +124,16 @@ h2::after{
     align-items: center;
   }
 
-  a {
+  .container-gallery a {
     text-decoration: none;
     position: relative;
-    /* left: 55px; */
+    left: 55px;
     color: black;
 
   }
 
 
-  a:hover {
+  .container-gallery a:hover {
     color: rgb(51, 223, 51);
   }
 
@@ -165,4 +152,42 @@ h2::after{
     top: 24px;
     border: 0px;
     border-radius: 16px;
+  }
+
+  .card_s01{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .card_s01 .card{
+    margin: 20px !important;
+  }
+
+  .card_s02, .card_s03{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card_s02 .card, .card_s03 .card{
+    margin: 20px !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .card_s01, .card_s02, .card_s03{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .card_s01 .card, .card_s02 .card, .card_s03 .card {
+      margin: 15px !important;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .card_s02 .card, .card_s03 .card {
+      width: 80% !important;
+      margin: 15px auto !important;
+    }
+    .card_s02 img, .card_s03 img {
+      width: 100% !important;
+    }
   }
