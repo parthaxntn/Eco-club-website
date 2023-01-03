@@ -9,6 +9,14 @@
     margin-bottom: 4.5rem;
 }
 
+.event-img-container{
+  width: 75%;
+}
+
+.event-img-container .events-card{
+  margin: auto;
+}
+
 .events h2::after{
     content: '';
     width: 4rem;

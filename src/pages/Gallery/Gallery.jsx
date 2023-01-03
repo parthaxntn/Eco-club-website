@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Gallery/Gallery.css'
-import GalleryImageCard from './GalleryImageCard'
+import GalleryImageCard from '../../components/Gallery/GalleryImageCard'
 
 const Gallery = () => {
 

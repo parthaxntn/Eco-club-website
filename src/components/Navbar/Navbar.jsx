@@ -1,11 +1,40 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logo from '../../Assets/logo.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { ImCross } from 'react-icons/im'
 
 const Navbar = () => {
+
+  let path = useLocation().pathname;
+
+  useEffect(()=>{
+    switch (path) {
+      case '/':
+        document.getElementById('title').innerText = `Eco-Club | Home`;
+        break;
+      case '/nox':
+        document.getElementById('title').innerText = `Eco-Club | Noixorgo`;
+        break;
+      case '/gallery':
+        document.getElementById('title').innerText = `Eco-Club | Gallery`;
+        break;
+      case '/events':
+        document.getElementById('title').innerText = `Eco-Club | Events`;
+        break;
+      case '/blog':
+        document.getElementById('title').innerText = `Eco-Club | Blog`;
+        break;
+      case '/team':
+        document.getElementById('title').innerText = `Eco-Club | Team`;
+        break;
+      default:
+        document.getElementById('title').innerText = `Eco-Club | Home`;
+        break;
+    }
+  },[useLocation().pathname])
+
   // return (
   //   <div className='navbar'>
   //         <div className="logo">

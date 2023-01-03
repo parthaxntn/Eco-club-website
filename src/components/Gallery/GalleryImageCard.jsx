@@ -1,5 +1,4 @@
 import React from 'react'
-import './Gallery.css'
 
 const GalleryImageCard = () => {
   return (

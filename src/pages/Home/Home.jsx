@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react'
 import './Home.css'
-import achievements from '../../Assets/Home/achievements.jpg'
 import director from '../../Assets/Home/director.png'
-import events from '../../Assets/Home/events.png'
-import initiatives from '../../Assets/Home/initiatives.jpg'
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
+import AchievementsCards from '../../components/Home/Achievements/AchievementsCards';
+import GreenInitiatives from '../../components/Home/GreenInitiatives/GreenInitiatives'
+import UpcomingEvents from '../../components/Home/Events/UpcomingEvents';
 
 
 const Home = () => {
@@ -127,35 +127,9 @@ const Home = () => {
       <section class="container">
         <h2>Achievements</h2>
         <div class="row gx-5">
-          <div class="col-sm-4 col-xs-12 py-3 py-sm-0">
-            {/* <!--One achievement card--> */}
-            <div class="card card-shadow">
-              <img class="card-img-top" src={achievements} alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title text-center">District Green Champion Award</h5>
-
-              </div>
-            </div>
-            {/* <!--Card ends--> */}
-          </div>
-          <div class="col-sm-4 col-xs-12 py-3 py-sm-0">
-            <div class="card card-shadow">
-              <img class="card-img-top" src={achievements} alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title text-center">UI Green Metric Ranking 200 in 2021</h5>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-12 py-3 py-sm-0">
-            <div class="card card-shadow">
-              <img class="card-img-top" src={achievements} alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title text-center">6 glorious years of existence</h5>
-
-              </div>
-            </div>
-          </div>
+          <AchievementsCards/>
+          <AchievementsCards/>
+          <AchievementsCards/>
         </div>
       </section>
       {/* <!-- Achivements ends --> */}
@@ -164,28 +138,8 @@ const Home = () => {
       <section class="container">
         <h2>Green Initiatives</h2>
         <div class="row gx-5">
-          <div class="col-sm-6 col-xs-12 py-3 py-sm-0">
-            <div class="card card-shadow">
-              <img class="card-img-top" src={initiatives} alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title text-center">Solar Panel</h5>
-                <div class="card-content">
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xs-12 py-3 py-sm-0">
-            <div class="card card-shadow">
-              <img class="card-img-top" src={initiatives} alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title text-center">Solar Panel</h5>
-                <div class="card-content">
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <GreenInitiatives/>
+          <GreenInitiatives/>
         </div>
       </section>
       {/* <!-- green initiatives ends --> */}
@@ -195,48 +149,9 @@ const Home = () => {
       <section class="container">
         <h2>Upcoming Events</h2>
         <div class="row gx-5">
-          <div class="col-sm-4 col-xs-12  py-3 py-sm-0">
-            <div class="card card-shadow">
-              <img class="card-img-top" src={events} alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">A walk for healthy environment</h5>
-                <div class="card-content">
-                  <p class="event-header">Paul Walker, CEO of Green Organization</p>
-                  <p class="event-time"><i class="fa-regular fa-calendar"></i>Sunday 2 Dec 2022 <i
-                    class="fa-regular fa-clock"></i>10 A.M.</p>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-12  py-3 py-sm-0">
-            <div class="card card-shadow">
-              <img class="card-img-top" src={events} alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">A walk for healthy environment</h5>
-                <div class="card-content">
-                  <p class="event-header">Paul Walker, CEO of Green Organization</p>
-                  <p class="event-time"><i class="fa-regular fa-calendar"></i>Sunday 2 Dec 2022 <i
-                    class="fa-regular fa-clock"></i>10 A.M.</p>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-12  py-3 py-sm-0">
-            <div class="card card-shadow">
-              <img class="card-img-top" src={events} alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">A walk for healthy environment</h5>
-                <div class="card-content">
-                  <p class="event-header">Paul Walker, CEO of Green Organization</p>
-                  <p class="event-time"><i class="fa-regular fa-calendar"></i>Sunday 2 Dec 2022 <i
-                    class="fa-regular fa-clock"></i>10 A.M.</p>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <UpcomingEvents/>
+          <UpcomingEvents/>
+          <UpcomingEvents/>
         </div>
       </section>
       {/* <!-- upcoming events ends --> */}
