@@ -3,6 +3,7 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
+    overflow: hidden;
 }
 
 .container1-left, .container1-right, .container2-left, .container2-right, .container3-left, .container3-right{
@@ -14,6 +15,13 @@
 }
 
 .containerTeam{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 4em;
+}
+
+.container1{
     margin-top: 2em;
     display: grid;
     grid-template-columns: 1fr 3fr;
