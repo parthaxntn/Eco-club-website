@@ -5,6 +5,7 @@ import facultyadv from '../../../Assets/facultyadv.svg'
 import '../TeamWords/TeamWords.css'
 import TeamLeft from '../TeamLeft'
 import TeamRight from '../TeamRight'
+import TeamMembers from '../TeamMembers/TeamMembers'
 
 const TeamWords = () => {
 
@@ -47,6 +48,8 @@ const TeamWords = () => {
                 }
             })}
             
+            <TeamMembers/>
+
         </div>
     )
 }
