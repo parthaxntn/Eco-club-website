@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: auto;
-    height: 30em;
+    height: 24em;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -24,11 +24,11 @@
     object-fit: cover;
 } */
 
-.mem-cont-bottom> h4, p+{
+.mem-cont-bottom> h5, p{
     font-family: 'Poppins';
 }
 
-.mem-cont-bottom> h4{
+.mem-cont-bottom> h5{
     color: rgb(58, 56, 56);
 }
 
