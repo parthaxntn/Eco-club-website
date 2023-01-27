@@ -1,13 +1,15 @@
 import React from "react";
+import "./MemberCalling.css"
 
 const MemberCalling = ({data}) => {
-    console.log(data)
     return (
-        <div className="mem-container">
-            <img src={data.src} alt="placeholder" className="prof-pic"/>
+        <div className="mem-container1">
+            <div className="img-container">
+                <img src={data.src.logo} alt="placeholder" className="prof-pic"/>
+            </div>
             <div className="mem-cont-bottom">
-                <h4>{data.name}</h4>
-                <p style={{"fontSize":"1.2rem"}}>{data.desig}</p>
+                <h5>{data.name}</h5>
+                <p>{data.desig}</p>
             </div>
         </div>
     )

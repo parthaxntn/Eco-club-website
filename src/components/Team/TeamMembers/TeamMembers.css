@@ -1,0 +1,71 @@
+.member-container{
+    justify-content: center;
+    text-align: center;
+}
+
+.member-container>h3{
+    padding-bottom: 0.6em;
+    position: relative;
+}
+
+.member-container> h3::before{
+    content: '';
+    width: 10rem;
+    height: 2px;
+    background-color: #43AB5F;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.activeYear{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 0.8em;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    padding: 0.4em;
+    width: max-content;
+    border-radius: 9em;
+    box-sizing: border-box;
+    box-shadow: 0.3px 0.3px 8px 0.2px rgb(72, 67, 67);
+    cursor: pointer;
+}
+
+.member-main-content{
+    padding-top: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 4em;
+}
+
+.student{
+    color: rgb(25, 166, 25);
+    font-family: 'Poppins';
+}
+
+.active{
+    color: #43AB5F;
+}
+
+@media (max-width: 510px) {
+    .member-main-content{
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        gap: 0em;
+    }
+    .activeYear{
+        font-size:small;
+    }
+}
+
+@media (max-width: 405px) {
+    .activeYear{
+        font-size: .7rem;
+    }
+}
