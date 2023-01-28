@@ -13,6 +13,7 @@ import Events from './pages/Events/Events';
 import Blog from './pages/Blog/Blog';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import BlogDetails from './pages/Blog/BlogDetails';
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
           <Route path='/nox' element={<Nox />} />
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/events' element={<Events />} />
-          <Route path='/blog' element={<Blog />} />
+          <Route path='/blogs' element={<Blog />} />
+          <Route path='/blog/:id' element={<BlogDetails />} />
           <Route path='/team' element={<Team />} />
         </Routes>
         <Footer/>
