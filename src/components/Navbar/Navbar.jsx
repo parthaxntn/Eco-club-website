@@ -23,7 +23,7 @@ const Navbar = () => {
       case '/events':
         document.getElementById('title').innerText = `Eco-Club | Events`;
         break;
-      case '/blog':
+      case '/blogs':
         document.getElementById('title').innerText = `Eco-Club | Blog`;
         break;
       case '/team':
@@ -84,7 +84,7 @@ const Navbar = () => {
               <li><Link to='/nox'>Noixorgo</Link></li>
               <li><Link to='/gallery'>Gallery</Link></li>
               <li><Link to='/events'>Events</Link></li>
-              <li><Link to='/blog'>Blog</Link></li>
+              <li><Link to='/blogs'>Blog</Link></li>
               <li><Link to='/team'>Team</Link></li>
             </ul>
             : <>

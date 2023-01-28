@@ -1,22 +1,23 @@
 import React from "react";
 import { useState } from "react";
+import MemberCalling from "./MemberCalling.jsx";
+import "./TeamMembers.css"
 import twentyTwo from "./Members/TwentyTwo.js";
 import twentyOne from "./Members/TwentyOne.js";
 import twenty from "./Members/Twenty.js";
 import nineteen from "./Members/Nineteen.js";
 import eighteen from "./Members/Eighteen.js";
-import MemberCalling from "./MemberCalling.jsx";
 
 const TeamMembers = () => {
     const year = ["2021-2022", "2020-2021", "2019-2020", "2018-2019", "2017-2018"];
     const [active, setActive] = useState(year[0]);
     return(
-        <div className="member-container" style={{"justifyContent": "center", "textAlign":"center"}}>
+        <div className="member-container">
             <h3 className="student">Student Members</h3>
-            <div className="activeYear" style={{"display":"flex", "textAlign": "center", "justifyContent": "center", }}>
+            <div className="activeYear mt-3">
                 {year.map((item) => {
                     return(
-                        <div style={{"display":"flex"}}
+                        <div
                             key = {item.id}
                             onClick = {() => setActive(item)}
                             className = {`${active === item && "active"}`}

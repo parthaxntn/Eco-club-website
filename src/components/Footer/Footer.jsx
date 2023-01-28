@@ -55,7 +55,7 @@ const Footer = () => {
                 <div className="box2">
                     {/* <i className="fa-solid fa-minus"></i> */}
                     <FaMinus color='rgba(5, 158, 5, 0.949)'/>
-                    <a href="#">Our Blogs</a>
+                    <a href="/blogs">Our Blogs</a>
                 </div>
                 <div className="box2">
                     {/* <i className="fa-solid fa-minus"></i> */}
