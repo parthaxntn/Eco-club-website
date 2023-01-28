@@ -138,7 +138,7 @@
 }
 
 .img-blog-detail h1 {
-  font-size: 3vw;
+  font-size: 2rem;
   color: #43ab5f;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -156,10 +156,11 @@
 }
 
 .blog-detail h2 {
-  font-size: 1.7vw;
-  line-height: 1.6;
+  color: #888888;
+  line-height: 1.5rem;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   margin: 1vw 0 1.5vw 0;
   padding-bottom: 4vw;
 }
@@ -250,4 +251,16 @@
     font-size: 3.4vw;
     padding-bottom: 8vw;
   }
+}
+.dropdown {
+  margin-bottom: 5rem;
+}
+.dropdown button {
+  background: none;
+  border: 2px #888888 solid;
+  padding: 0.5rem 1rem;
+}
+.dropdown button:hover {
+  background: none;
+  border: 1.25px #888888 solid;
 }

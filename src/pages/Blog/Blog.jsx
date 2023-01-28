@@ -52,6 +52,69 @@ const Blog = () => {
               );
             })}
           </div>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              All Blogs
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">
+                  Did you know?
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Eco Agitations
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Eco-vation
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Explore wild
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Exploring NIT Silchar
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Greenovation
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Know your herbs
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Mythbuster
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  On thin ice
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Eco stand
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>
