@@ -1,10 +1,9 @@
-import React from 'react'
 import director from '../../../Assets/director.svg' 
 import deansw from '../../../Assets/deansw.svg'
 import facultyadv from '../../../Assets/facultyadv.svg'
 import '../TeamWords/TeamWords.css'
-import TeamLeft from '../TeamLeft'
-import TeamRight from '../TeamRight'
+import TeamLeft from './TeamLeft'
+import TeamRight from './TeamRight'
 import TeamMembers from '../TeamMembers/TeamMembers'
 
 const TeamWords = () => {

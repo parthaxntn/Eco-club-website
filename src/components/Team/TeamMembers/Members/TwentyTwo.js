@@ -1,4 +1,3 @@
-
 import logo from "../../../../Assets/Gandhi Jayanti.png"
 
 // const twentyOne = () => {
