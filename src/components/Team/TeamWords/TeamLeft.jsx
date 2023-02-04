@@ -1,5 +1,3 @@
-import React from 'react'
-
 const TeamLeft = (props) => {
     return (
         <div className='container1'>
