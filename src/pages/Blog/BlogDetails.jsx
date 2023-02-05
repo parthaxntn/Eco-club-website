@@ -17,17 +17,15 @@ const BlogDetails = () => {
             <div className="img-blog-detail">
               <h1>{item.title}</h1>
             </div>
-
             <div className="bsca bsca-blog-detail">
               <img
                 style={{ pointerEvents: "none" }}
                 src={item.img0}
                 alt={item.title}
               />
-              <BsCalendar className="bscal" />{" "}
-              <h5 className="greaterthan date-blog-pub">{item.date}</h5>
             </div>
-
+            <BsCalendar className="bscal" />
+            <span className="greaterthan date-blog-pub">{item.date}</span>
             <h2>{item.blogdetail}</h2>
           </div>
         </>

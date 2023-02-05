@@ -53,7 +53,8 @@
   width: 30%;
   padding: 1.5vh;
   /* background-color: red; */
-  box-shadow: 0 0 0.1375rem;
+  box-shadow: -1.57565px 0px 6.30261px rgba(0, 0, 0, 0.08),
+    1.57565px 1.57565px 6.30261px rgba(0, 0, 0, 0.08);
   border-radius: 0.625rem;
   transition: all 0.2s ease-in-out;
 }
@@ -78,8 +79,9 @@
 }
 
 .blog-cont-short {
-  margin-bottom: 3vh;
-  font-size: 1.4vw;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #888;
 }
 
 .date-continue {
@@ -114,8 +116,9 @@
 }
 
 .blog-indi-title {
-  font-size: 1.4vw;
-  color: #43ab5f;
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
 }
 
 .blog-indi:hover {
@@ -227,8 +230,7 @@
   }
 
   .img-blog-detail h1 {
-    font-size: 5.5vw;
-    margin: 4.5vw 0;
+    font-size: 1.25rem;
   }
 
   .img-blog-detail {
