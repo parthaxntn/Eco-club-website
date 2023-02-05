@@ -46,11 +46,11 @@
 .blog-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50vh;
+  margin-bottom: 2rem;
 }
 
 .blog-indi {
-  width: 32%;
+  width: 30%;
   padding: 1.5vh;
   /* background-color: red; */
   box-shadow: 0 0 0.1375rem;
@@ -253,7 +253,7 @@
   }
 }
 .dropdown {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 .dropdown button {
   background: none;

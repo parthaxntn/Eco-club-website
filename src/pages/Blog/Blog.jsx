@@ -115,6 +115,31 @@ const Blog = () => {
               </li>
             </ul>
           </div>
+          <div className="blog-list">
+            {Blogdata.map((item) => {
+              return (
+                <div className="blog-indi" key={item.id}>
+                  <img src={item.img} alt={item.title} />
+                  <h4 className="blog-indi-title">{item.title}</h4>
+                  <h5 className="blog-cont-short">{item.content}</h5>
+
+                  <div className="date-continue">
+                    <div className="bsca">
+                      <BsCalendar />{" "}
+                      <h5 className="greaterthan date-blog-pub">{item.date}</h5>
+                    </div>
+
+                    <Link to={`/blog/${item.id}`}>
+                      <div className="bsca">
+                        <h4> Continue </h4>
+                        <FaGreaterThan size={10} className="greaterthan" />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
