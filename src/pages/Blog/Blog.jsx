@@ -1,11 +1,11 @@
-import React from "react";
 import "./Blog.css";
 import { Blogdata } from "./Dataset";
 import { BsCalendar } from "react-icons/bs";
 import { FaGreaterThan } from "react-icons/fa";
 import { Link } from "react-router-dom";
-// import { Link } from 'react-router-dom';
+import { useSelector } from "react-redux";
 const Blog = () => {
+  const posts = useSelector((state) => state.posts);
   return (
     <>
       <div className="main-blog">
