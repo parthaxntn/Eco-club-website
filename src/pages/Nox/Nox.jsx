@@ -36,10 +36,12 @@ const Nox = () => {
             This segment not only aims to promote environmental awarness, but also hopes to bring about an interest
             among the people and allure them to know more about our Mother Earth.</p>
 
-          <div className="highlight">
-            <img className='' src="https://picsum.photos/1800/700?nature" alt="" />
+          <div className="highlight my-5">
+            {/* <img className='' src="https://picsum.photos/1800/700?nature" alt="" /> */}
+            <PictureCard/>
           </div>
-          <div className="imgs d-flex ">
+          <div className="imgs d-flex my-5 flex-wrap">
+            <PictureCard/>
             <PictureCard/>
             <PictureCard/>
             <PictureCard/>
