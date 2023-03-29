@@ -158,7 +158,7 @@ const Home = () => {
 
       <h2>Beauty of NITS</h2>
 
-      <Splide
+      {/* <Splide
           options={ mainOptions }
           ref={ mainRef }
           aria-labelledby="thumbnail-slider-example"
@@ -219,7 +219,7 @@ const Home = () => {
           <SplideSlide>
             <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
           </SplideSlide>
-        </Splide>
+        </Splide> */}
 
 
       
