@@ -4,7 +4,7 @@
   /* background-color: red; */
 }
 .blog-top {
-  margin: 3rem auto 1.5rem auto;
+  margin: .8rem auto 1.5rem auto;
   text-align: center;
 }
 
@@ -26,6 +26,7 @@
   color: #43ab5f;
   font-size: 2rem;
   margin-bottom: 7vh;
+  margin-inline: 2rem;
 }
 
 .blog-heading h2 {
@@ -33,6 +34,7 @@
   font-weight: 500;
   color: #888888;
   font-size: 1.125rem;
+  line-height: 28px;
 }
 
 .blog-container h3 {
@@ -190,10 +192,6 @@
     padding-bottom: 1vh;
   }
 
-  .blog-heading h2 {
-    font-size: 4vw;
-  }
-
   .main-blog {
     width: 95%;
   }
@@ -249,5 +247,13 @@
   .blog-detail h2 {
     font-size: 3.4vw;
     padding-bottom: 8vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog-heading{
+    font-size: 3vw;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }

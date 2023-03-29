@@ -1,5 +1,6 @@
 import React from 'react'
 import initiatives from '../../../Assets/Home/initiatives.jpg'
+import './GreenInitiatives.css'
 
 const GreenInitiatives = () => {
   return (

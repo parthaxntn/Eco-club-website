@@ -9,7 +9,6 @@ const AchievementsCards = () => {
               <img class="card-img-top" src={achievements} alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title text-center">District Green Champion Award</h5>
-
               </div>
             </div>
             {/* <!--Card ends--> */}
