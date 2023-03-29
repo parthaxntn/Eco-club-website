@@ -17,7 +17,7 @@
 
 .container-gallery h2::after{
     content: '';
-    width: 4rem;
+    width: 6rem;
     height: 3px;
     background-color: #43AB5F;
     position: absolute;
@@ -189,7 +189,7 @@
     }
   }
 
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 480px) {
     .card_s01 .card{
       height: 20rem !important;
     }

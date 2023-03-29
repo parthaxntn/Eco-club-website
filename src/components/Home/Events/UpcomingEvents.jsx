@@ -1,5 +1,6 @@
 import React from 'react'
 import events from '../../../Assets/Home/events.png'
+import './UpcomingEvents.css'
 
 const UpcomingEvents = () => {
   return (
