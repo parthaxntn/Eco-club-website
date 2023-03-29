@@ -183,5 +183,8 @@ i.fa-clock {
 @media screen and (max-width: 480px) {
     .homeContent{
         font-size: 17px;
+        margin-inline: 2rem;
+        text-align: justify ;
+        text-justify: inter-word;
     }
 }
