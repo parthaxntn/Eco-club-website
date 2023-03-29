@@ -25,7 +25,7 @@ const BlogDetails = () => {
                                 <BsCalendar className='bscal'/> <h5 className='greaterthan date-blog-pub'>{item.date}</h5>
                             </div>
 
-                            <h2>{item.blogdetail}</h2>
+                            <p>{item.blogdetail}</p>
 
                         </div>
                     </>

@@ -21,7 +21,7 @@
     transition: 0.25s;
 }
 
-.navbar .nav li:hover{
+.navbar .nav li .selected{
     color: rgb(48, 151, 0);
 }
 

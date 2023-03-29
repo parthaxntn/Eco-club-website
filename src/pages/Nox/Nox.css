@@ -55,3 +55,59 @@
     text-align: center;
     margin-top: 6rem;
 }
+
+
+.pic-card{
+    width: 450px;
+    border: 2px solid #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight .pic-card{
+    width: 600px ;
+}
+
+.pic-card img{
+    margin: 0.6rem;
+    width: calc(100% - 1.2rem);
+    border-radius: 8px 8px 0px 0px;
+    transition: 0.5s;
+}
+
+.pic-card .text{
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+
+.nox .imgs{
+    width: 80%;
+    margin: auto;
+}
+
+
+.socials{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 2rem;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pic-card:hover .socials{
+    top: 50%;
+    opacity: 1;
+}
+
+.pic-card:hover img{
+    filter: blur(15px);
+}
+
+.socials svg{
+    margin: 1rem;
+}

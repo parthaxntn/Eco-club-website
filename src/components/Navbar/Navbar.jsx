@@ -80,12 +80,12 @@ const Navbar = () => {
         <div className="backdrop" style={{ zIndex: `${hamburg===true?200:-100}`,background: `${hamburg === false ? 'transparent' : 'rgba(0, 0, 0, 0.492)'}` }}></div>
         {winWidth > 800 ? 
             <ul className='nav'>
-              <li><Link to='/'>Home</Link></li>
-              <li><Link to='/nox'>Noixorgo</Link></li>
-              <li><Link to='/gallery'>Gallery</Link></li>
-              <li><Link to='/events'>Events</Link></li>
-              <li><Link to='/blogs'>Blog</Link></li>
-              <li><Link to='/team'>Team</Link></li>
+              <li><Link className={path==='/'?'selected':''} to='/'>Home</Link></li>
+              <li><Link className={path==='/nox'?'selected':''} to='/nox'>Noixorgo</Link></li>
+              <li><Link className={path==='/gallery'?'selected':''} to='/gallery'>Gallery</Link></li>
+              <li><Link className={path==='/events'?'selected':''} to='/events'>Events</Link></li>
+              <li><Link className={path==='/blogs'?'selected':''} to='/blogs'>Blog</Link></li>
+              <li><Link className={path==='/team'?'selected':''} to='/team'>Team</Link></li>
             </ul>
             : <>
           <div className="hamburger" style={{fontSize: `${hamburg===false?'40px':'30px'}`,  margin: `${hamburg===false?'auto':''}`, marginRight: `${hamburg===false?'2rem':''}`, position: `${hamburg===true?'fixed':''}`, right: `${hamburg===true?'30px':''}`}} onClick={hamburger}>
@@ -116,7 +116,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-button team">
-                <Link to="/blog" className="nav-link">
+                <Link to="/blogs" className="nav-link">
                   Blog
                 </Link>
               </li>
