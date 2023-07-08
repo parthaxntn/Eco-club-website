@@ -26,6 +26,7 @@ const Blog = () => {
 
         <div className="blog-container">
           <h3>New releases</h3>
+          
 
           <div className="blog-list">
             {Blogdata.map((item) => {
@@ -52,6 +53,9 @@ const Blog = () => {
               );
             })}
           </div>
+
+
+
         </div>
       </div>
     </>

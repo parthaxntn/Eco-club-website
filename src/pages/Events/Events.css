@@ -1,5 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+.main-event {
+  width: 90%;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+.event-top {
+  margin: .8rem auto 1.5rem auto;
+  text-align: center;
+}
+
+
+.event-top h1 {
+  color: #43ab5f;
+  padding-bottom: 2vh;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 3px solid#43AB5F;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.first{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.card {
+  width: 30%; /* Display three boxes in a row by default */
+  margin-bottom: 1rem; /* Adjust the gap between the cards as needed */
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    width: 45%; /* Display two boxes in a row for screen width between 600px and 800px */
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .card {
+    width: 100%; /* Display one box in a row for screen width below 600px */
+  }
+}
+
+
+
+
+
+
+
+
 /* .events h2{
     font-weight: 500;
     font-size: 2rem;
