@@ -85,7 +85,7 @@
 
 
 
-.first{
+/* .first{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -131,24 +131,24 @@
 .card{
   display: flex;
   flex-direction: column;
-  height: 425px;
-  width: 350px;
+  /* height: 425px; */
+  /* width: 350px; */
   /* left: 20px;
   top: 20px; */
-  /* border-bottom-right-radius: 58px;
-  border-top-left-radius: 58px; */
+  /* border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px; */
   /* gap: 12px; */
-  border: 2px solid #9A9494;
+  /* border: 2px solid #9A9494;
   box-sizing: border-box;
   box-shadow: -4px -4px 12px 0px #F2F2F240;
   box-shadow: 4px 4px 12px 0px #4F4F4F33;
-  overflow: hidden;
-}
+  overflow: hidden; */
+/* } */
 
-.images img{
+/* .images img{
   padding: 9px;
   border: white 2px solid;
-  border-top-left-radius: 5px;
+  border-top-left-radius: 10px;
   border-top-right-radius: 5px;
   width: 100%;
   height: 12rem;
@@ -178,7 +178,7 @@
   text-overflow: ellipsis;
 }
 
-/* .about{
+.about{
   border: 2px white solid;
   border-radius: 8px;
   box-shadow: grey;
@@ -187,12 +187,12 @@
   align-items: center;
   
 }
-/* .about p{
+.about p{
   font-size: 25px;
   text-align: center;
   margin-bottom: 20px;
 
-} */
+}
 /* .read{
   border: 2px grey solid;
   border-radius: 12px;

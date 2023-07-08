@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import './Home.css'
 import director from '../../Assets/Home/director.png'
-import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+// import { SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
 import AchievementsCards from '../../components/Home/Achievements/AchievementsCards';
 import GreenInitiatives from '../../components/Home/GreenInitiatives/GreenInitiatives'
@@ -79,7 +80,7 @@ const Home = () => {
 
       {/* <!-- About Us starts --> */}
       <section className="container">
-        <h2>About Us</h2>
+        <h2 className='About'>About Us</h2>
         <p className="homeContent">
           NITS Eco Club is an officially recognised club under the Gymkhana Union Body, NIT Silchar. The principal objective
           of this club is to keep the campus clean, and preserve the diverse flora and fauna our institution has to offer.
@@ -91,10 +92,10 @@ const Home = () => {
       {/* <!-- About Us ends --> */}
       {/* <!--From the Director's Desk starts--> */}
       <section className="container">
-        <h2>From the Director's Desk</h2>
+        <h2 className='About'>From the Director's Desk</h2>
         <div className="row gx-5">
           <div className="col-lg-4 text-center">
-            <img src={director} className="img-fluid rounded-circle mb-3" widthalt="" alt='Director NIT Silchar'/>
+            <img src={director} className="img-fluid rounded-circle mb-4" widthalt="" alt='Director NIT Silchar'/>
             <h5>Sivaji Bandyopadhyay</h5>
             <p>Director, Nit Silchar</p>
           </div>
@@ -162,28 +163,28 @@ const Home = () => {
           aria-labelledby="thumbnail-slider-example"
         >
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
         </Splide>
 
@@ -194,28 +195,28 @@ const Home = () => {
           aria-label="The carousel with thumbnails. Selecting a thumbnail will change the main carousel"
         >
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 3" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 4" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 5" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 6" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
         </Splide>
 

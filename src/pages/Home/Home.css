@@ -179,11 +179,24 @@ i.fa-clock {
     padding-top: 0px;
   }
 
+@media screen and (max-width: 540px) {
+    
+}
 
 @media screen and (max-width: 480px) {
+    .container h2{
+        font-size: 1.6rem;
+    }
+    .container h2::after{
+        height: 2px;
+        bottom: -14px;
+    }
+    .container img{
+        width: 18em;
+    }
+
     .homeContent{
         font-size: 17px;
-        margin-inline: 2rem;
         text-align: justify ;
         text-justify: inter-word;
     }
