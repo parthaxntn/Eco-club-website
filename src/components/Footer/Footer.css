@@ -1,106 +1,87 @@
-*{
+* {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 /*CSS for main_containeer*/
 
-.main_containeer{
+.main_containeer {
     display: flex;
-    background-color: #5A5A5A;
-    padding:10px 75px;
-    justify-content: space-around;
-
+    background-color: #484747;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    justify-content: space-evenly;
 }
-.contact_us p{
-    color: rgba(5, 158, 5, 0.949);
+
+.contact_us p {
+    color: rgba(10, 171, 10, 0.949);
     font-size: 20px;
     font-weight: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 40px;
-    padding-top: 20px;
-
 }
-.box1{
+
+.contactBigBox {
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+}
+
+.box1 {
     padding: 5px;
-    margin-bottom: 10px;
     text-decoration: none;
 }
-.box1 i{
-    margin-right: 15px;
-    color: rgba(5, 158, 5, 0.949);
-}
-.box1 a{
+
+.box1 a {
     text-decoration: none;
     color: white;
     font-size: 18px;
 }
 
-
-.quick_links p{
+.quick_links p {
     color: rgba(5, 158, 5, 0.949);
     font-size: 20px;
     font-weight: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 40px;
-    padding-top: 20px;
 
 }
 
-.box2{
+.box2 {
     padding: 5px;
-    margin-bottom: 15px;
     text-decoration: none;
 }
-.box2 i{
-    margin-right: 15px;
-    color: rgba(5, 158, 5, 0.949);
-}
-.box2 a{
+
+.box2 a {
     text-decoration: none;
     color: white;
     font-size: 18px;
 }
 
-
-.developers p{
+.developers p {
     color: rgba(5, 158, 5, 0.949);
     font-size: 20px;
     font-weight: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 40px;
-    padding-top: 20px;
 
 }
 
-.box3{
+.box3 {
     padding: 5px;
-    margin-bottom: 15px;
     text-decoration: none;
 }
-.box3 i{
-    margin-right: 15px;
-    color: rgba(5, 158, 5, 0.949);
-}
-.box3 a{
+
+.box3 a {
     text-decoration: none;
     color: white;
     font-size: 18px;
 }
 
-
-
-.mail_us p{
+.mail_us p {
     color: rgba(5, 158, 5, 0.949);
     font-size: 20px;
     font-weight: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 40px;
-    padding-top: 20px;
 }
 
-input[type=mailid]{
+input[type=mailid] {
     background-color: rgba(255, 255, 255, 0.397);
     color: white;
     border-left: 2px solid #5A5A5A;
@@ -114,15 +95,18 @@ input[type=mailid]{
     outline: none;
     /*background-color: rgba(128, 128, 128, 0.797);*/
 }
-.box4{
+
+.box4 {
     display: flex;
     flex-direction: row;
 }
-.arrow{
+
+.arrow {
     align-items: center;
     color: grey;
 }
-.arrow{
+
+.arrow {
     background-color: #808080;
     color: white;
     padding: 4.5px;
@@ -132,14 +116,15 @@ input[type=mailid]{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.arrow :hover{
+
+.arrow :hover {
     color: black;
     cursor: pointer;
-    
-    
+
+
 }
-  
-   /* .box4 i{
+
+/* .box4 i{
       background-color: grey;
       right: 0;
       color: #ffffff;
@@ -157,22 +142,24 @@ input[type=mailid]{
   } */
 
 
-  @media screen and (max-width: 410px){
-    .main_containeer{
-         flex-direction: column;
-         /* width:100%; */
+@media screen and (max-width: 410px) {
+    .main_containeer {
+        flex-direction: column;
+        /* width:100%; */
     }
+
     .contact_us,
     .quick_links,
     .developers,
-    .mail_us{
+    .mail_us {
         text-align: center;
     }
 
 }
-@media screen and (min-width:410px) and (max-width:1080px){
-    .main_containeer{
+
+@media screen and (min-width:410px) and (max-width:1080px) {
+    .main_containeer {
         flex-direction: column;
-        
+
     }
 }
