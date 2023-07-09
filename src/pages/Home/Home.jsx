@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import './Home.css'
 import director from '../../Assets/Home/director.png'
-import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+// import { SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
 import AchievementsCards from '../../components/Home/Achievements/AchievementsCards';
 import GreenInitiatives from '../../components/Home/GreenInitiatives/GreenInitiatives'
@@ -54,33 +55,33 @@ const Home = () => {
   return (
     <div className='home'>
 
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="https://picsum.photos/1800/700?nature" class="d-block w-100" alt="https://picsum.photos/1800/700" />
+      <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active" data-bs-interval="10000">
+            <img src="https://picsum.photos/1800/700?nature" className="d-block w-100" alt="https://picsum.photos/1800/700" />
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="https://picsum.photos/1800/700?nature" class="d-block w-100" alt="https://picsum.photos/1800/700" />
+          <div className="carousel-item" data-bs-interval="2000">
+            <img src="https://picsum.photos/1800/700?nature" className="d-block w-100" alt="https://picsum.photos/1800/700" />
           </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/1800/700?nature" class="d-block w-100" alt="https://picsum.photos/1800/700" />
+          <div className="carousel-item">
+            <img src="https://picsum.photos/1800/700?nature" className="d-block w-100" alt="https://picsum.photos/1800/700" />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
 
 
       {/* <!-- About Us starts --> */}
-      <section class="container">
-        <h2>About Us</h2>
-        <p class="homeContent">
+      <section className="container">
+        <h2 className='About'>About Us</h2>
+        <p className="homeContent">
           NITS Eco Club is an officially recognised club under the Gymkhana Union Body, NIT Silchar. The principal objective
           of this club is to keep the campus clean, and preserve the diverse flora and fauna our institution has to offer.
           Under this club, NIT Silchar has achieved greater heights. It has been placed 200th among 956 universites
@@ -90,16 +91,16 @@ const Home = () => {
       </section>
       {/* <!-- About Us ends --> */}
       {/* <!--From the Director's Desk starts--> */}
-      <section class="container">
-        <h2>From the Director's Desk</h2>
-        <div class="row gx-5">
-          <div class="col-lg-4 text-center">
-            <img src={director} class="img-fluid rounded-circle mb-3" widthalt="" />
+      <section className="container">
+        <h2 className='About'>From the Director's Desk</h2>
+        <div className="row gx-5">
+          <div className="col-lg-4 text-center">
+            <img src={director} className="img-fluid rounded-circle mb-4" widthalt="" alt='Director NIT Silchar'/>
             <h5>Sivaji Bandyopadhyay</h5>
             <p>Director, Nit Silchar</p>
           </div>
-          <div class="col-lg-8 d-flex justify-content-center">
-            <p class="homeContent">
+          <div className="col-lg-8 d-flex justify-content-center">
+            <p className="homeContent">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
               sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
               nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
@@ -116,17 +117,15 @@ const Home = () => {
               eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem
               in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus
               et ultrices posuere cubilia Curae; In ac dui quis mi
-
-
             </p>
           </div>
         </div>
       </section>
       {/* <!--From the Director's Desk ends-->
   <!-- Achivements starts --> */}
-      <section class="container">
+      <section className="container">
         <h2>Achievements</h2>
-        <div class="row gx-5">
+        <div className="row gx-5">
           <AchievementsCards/>
           <AchievementsCards/>
           <AchievementsCards/>
@@ -135,9 +134,9 @@ const Home = () => {
       {/* <!-- Achivements ends --> */}
 
       {/* <!-- Green initiatives starts --> */}
-      <section class="container">
+      <section className="container">
         <h2>Green Initiatives</h2>
-        <div class="row gx-5">
+        <div className="row gx-5">
           <GreenInitiatives/>
           <GreenInitiatives/>
         </div>
@@ -146,9 +145,9 @@ const Home = () => {
 
 
       {/* <!-- upcoming events starts --> */}
-      <section class="container">
+      <section className="container">
         <h2>Upcoming Events</h2>
-        <div class="row gx-5">
+        <div className="row gx-5">
           <UpcomingEvents/>
           <UpcomingEvents/>
           <UpcomingEvents/>
@@ -164,28 +163,28 @@ const Home = () => {
           aria-labelledby="thumbnail-slider-example"
         >
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
         </Splide>
 
@@ -196,28 +195,28 @@ const Home = () => {
           aria-label="The carousel with thumbnails. Selecting a thumbnail will change the main carousel"
         >
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 3" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 4" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 5" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 6" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 1" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="Image 2" />
+            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
           </SplideSlide>
         </Splide>
 
