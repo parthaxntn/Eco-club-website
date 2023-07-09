@@ -105,7 +105,7 @@
 
 @media (max-width: 600px){
     .para{
-        padding: 0px 1rem;
+        padding: 0px 4rem;
     }
     .cs{
         font-size: 30px !important;
@@ -115,4 +115,15 @@
         text-align: justify;
         text-justify: inter-word;
     }
+}
+
+
+@media (max-width: 400px){
+    .para{
+        padding: 0px 2rem;
+    }
+    .cs{
+        font-size: 20px !important;
+    }
+
 }
