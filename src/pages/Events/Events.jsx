@@ -75,19 +75,21 @@ import GandhiJayanti from '../../Assets/Gandhi Jayanti.png'
 const Events = () => {
     return (
         <>
-            <div className="main-event">
-                <div className="event-top">
+            <div className="event-page">
+                <div className="event-head">
+
                     <h1>Upcoming Events</h1>
+                    <span className='event-head-bottom'></span>
                 </div>
 
 
-                <section className="first">
-                    <div className="event_box1">
+                <section className="event-landing">
+                    <div className="event-boxes">
                         
-                        <div className="card_box">
+                        <div className="event-card-boxes">
                             {Data.map(data => {
                                 return (
-                                    <div className="card">
+                                    <div className="event-cards">
                                         <div className="images">
                                             <img src={GandhiJayanti} alt="" />
                                         </div>
@@ -111,13 +113,13 @@ const Events = () => {
 
 
                     <div className="event_box2">
-                        <div className="event-top">
+                        <div className="event-head">
                             <h1>Past Events</h1>
                         </div>
-                        <div className="card_box">
+                        <div className="event-card-boxes">
                             {Data.map(data => {
                                 return (
-                                    <div className="card">
+                                    <div className="event-cards">
                                         <div className="images">
                                             <img src={GandhiJayanti} alt="" />
                                         </div>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-.main-event {
-  width: 90%;
+.event-page {
+  width: 100%;
   margin: 0 auto;
   /* background-color: red; */
 }
@@ -11,10 +11,28 @@
 }
 
 
-.event-top h1 {
+.event-head h1 {
+  color: #43ab5f;
+  padding-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 3rem;
+
+}
+
+
+
+
+/* .event-head h1 {
   color: #43ab5f;
   padding-bottom: 2vh;
   display: inline-block;
+  align-items: center;
   text-align: center;
   border-bottom: 3px solid#43AB5F;
   font-size: 2rem;
@@ -22,42 +40,112 @@
   font-weight: 600;
   margin-top: 3rem;
   margin-bottom: 1rem;
-}
+} */
 
-.first{
+.event-landing{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  padding-top: 2rem;
   padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
 }
 
 
-.card_box {
+.event-card-boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 4rem;
+  align-items: center;
+  justify-content: center;
 }
 
 
-.card {
+.event-cards {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
   width: 30%; /* Display three boxes in a row by default */
-  margin-bottom: 1rem; /* Adjust the gap between the cards as needed */
+  margin-bottom: 3rem; /* Adjust the gap between the cards as needed */
+}
+
+.description{
+  width: 60%;
+}
+
+@media screen and (max-width: 1240px) {
+  .event-cards {
+    width: 50%; /* Display two boxes in a row for screen width between 600px and 800px */
+  }
+  .description{
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 900px) {
-  .card {
-    width: 45%; /* Display two boxes in a row for screen width between 600px and 800px */
+  .event-cards {
+    width: 50%; /* Display two boxes in a row for screen width between 600px and 800px */
   }
 }
 
-@media screen and (max-width: 560px) {
-  .card {
+@media screen and (max-width: 800px) {
+  .event-cards {
+    padding-left: 8rem;
     width: 100%; /* Display one box in a row for screen width below 600px */
   }
+  .event-card-boxes{
+    align-items: center;
+  }
+  .description{
+    width: 60%;
+  }
 }
+
+
+@media screen and (max-width: 700px) {
+  .event-cards {
+    padding-left: 6rem;
+    width: 100%; /* Display one box in a row for screen width below 600px */
+  }
+  .event-card-boxes{
+    align-items: center;
+  }
+  .description{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .event-cards {
+    padding-left: 4rem;
+    width: 100%; /* Display one box in a row for screen width below 600px */
+  }
+  .event-card-boxes{
+    align-items: center;
+  }
+  .description{
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .event-cards {
+    width: 100%; /* Display one box in a row for screen width below 600px */
+  }
+  .event-cards {
+    padding-left: 0rem;
+    padding: 1%;
+    width: 100%; /* Display one box in a row for screen width below 600px */
+  }
+  .description{
+    padding: 0.8rem;
+    width: 90%;
+  }
+}
+
+
 
 
 
