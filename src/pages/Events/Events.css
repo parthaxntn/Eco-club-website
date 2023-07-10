@@ -5,13 +5,13 @@
   margin: 0 auto;
   /* background-color: red; */
 }
-.event-top {
+.main-event .event-top {
   margin: .8rem auto 1.5rem auto;
   text-align: center;
 }
 
 
-.event-top h1 {
+.main-event .event-top h1 {
   color: #43ab5f;
   padding-bottom: 2vh;
   display: inline-block;
@@ -24,7 +24,7 @@
   margin-bottom: 1rem;
 }
 
-.first{
+.main-event .first{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -35,26 +35,26 @@
 }
 
 
-.card_box {
+.main-event .card_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 
-.card {
+.main-event .card {
   width: 30%; /* Display three boxes in a row by default */
   margin-bottom: 1rem; /* Adjust the gap between the cards as needed */
 }
 
 @media screen and (max-width: 900px) {
-  .card {
+  .main-event .card {
     width: 45%; /* Display two boxes in a row for screen width between 600px and 800px */
   }
 }
 
 @media screen and (max-width: 560px) {
-  .card {
+  .main-event .card {
     width: 100%; /* Display one box in a row for screen width below 600px */
   }
 }
