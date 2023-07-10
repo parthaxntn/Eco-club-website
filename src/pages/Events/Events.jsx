@@ -1,5 +1,5 @@
 import React from 'react'
-import './Events.css'
+import './EventsMain.css'
 // import EventsCard from '../../components/Events/EventsCard'
 import Data from './Events.json'
 import GandhiJayanti from '../../Assets/Gandhi Jayanti.png'
@@ -78,8 +78,7 @@ const Events = () => {
             <div className="event-page">
                 <div className="event-head">
 
-                    <h1>Upcoming Events</h1>
-                    <span className='event-head-bottom'></span>
+                    <h1 className='event-head-bottom'>Upcoming Events</h1>
                 </div>
 
 
