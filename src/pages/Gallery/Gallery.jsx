@@ -80,7 +80,7 @@ const Gallery = () => {
                 <div class="card_s01 d-flex flex-wrap">
                     {eventPhotos.map((e) => {
                         return (
-                            <div class="card my-1 my-xl-0" style={{ width: '26rem', height: '23rem' }}>
+                            <div class="card my-1 my-xl-0" style={{ width: '26rem'}}>
                                 <img src={`/imgs/Gallery/${e.image}`} class="card-img-top" alt="Swacchta Pakhwada" />
                                 <div class="card-body">
                                     <p class="card-text">{e.title}</p>
