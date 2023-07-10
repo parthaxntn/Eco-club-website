@@ -89,7 +89,7 @@ const Events = () => {
                             {Data.map(data => {
                                 return (
                                     <div className="event-cards">
-                                        <div className="images">
+                                        <div className="event-images">
                                             <img src={GandhiJayanti} alt="" />
                                         </div>
                                         <div className="description">
