@@ -99,6 +99,10 @@ i.fa-clock {
     margin: 0 auto;
 }
 
+.splide-img{
+    width: 100%;
+}
+
 .thumbnails {
     display: flex;
     margin: 1rem auto 0;
@@ -177,6 +181,7 @@ i.fa-clock {
 
   #splide02{
     padding-top: 0px;
+    overflow-x: scroll;
   }
 
 @media screen and (max-width: 540px) {

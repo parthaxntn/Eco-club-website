@@ -191,7 +191,7 @@
 
   @media screen and (max-width: 480px) {
     .card_s01 .card{
-      height: 20rem !important;
+      /* height: 20rem !important; */
     }
     .card_s02, .card_s03{
       padding: 0;

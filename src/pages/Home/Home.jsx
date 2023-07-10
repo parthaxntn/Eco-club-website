@@ -34,7 +34,7 @@ const Home = () => {
     perMove   : 1,
     gap       : '1rem',
     pagination: false,
-    height    : '600px',
+    height    : 'auto',
     width: '90%'
   };
 
@@ -163,28 +163,28 @@ const Home = () => {
           aria-labelledby="thumbnail-slider-example"
         >
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
+            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
+            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
+            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
+            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
+            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
+            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
+            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
           </SplideSlide>
           <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
+            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
           </SplideSlide>
         </Splide>
 

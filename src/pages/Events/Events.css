@@ -5,7 +5,7 @@
   margin: 0 auto;
   /* background-color: red; */
 }
-.event-top {
+.main-event .event-top {
   margin: .8rem auto 1.5rem auto;
   text-align: center;
 }
@@ -29,6 +29,7 @@
 
 
 /* .event-head h1 {
+.main-event .event-top h1 {
   color: #43ab5f;
   padding-bottom: 2vh;
   display: inline-block;
@@ -43,6 +44,7 @@
 } */
 
 .event-landing{
+.main-event .first{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -53,6 +55,7 @@
 
 
 .event-card-boxes {
+.main-event .card_box {
   display: flex;
   flex-wrap: wrap;
   padding: 4rem;
@@ -66,6 +69,7 @@
   align-items: center;
   justify-content: center;
   padding: 2%;
+.main-event .card {
   width: 30%; /* Display three boxes in a row by default */
   margin-bottom: 3rem; /* Adjust the gap between the cards as needed */
 }
@@ -92,6 +96,13 @@
 @media screen and (max-width: 800px) {
   .event-cards {
     padding-left: 8rem;
+  .main-event .card {
+    width: 45%; /* Display two boxes in a row for screen width between 600px and 800px */
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .main-event .card {
     width: 100%; /* Display one box in a row for screen width below 600px */
   }
   .event-card-boxes{
