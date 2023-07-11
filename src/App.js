@@ -14,6 +14,7 @@ import Blog from './pages/Blog/Blog';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import BlogDetails from './pages/Blog/BlogDetails';
+import Developers from './components/Developers/Developers';
 
 function App() {
   
@@ -29,7 +30,7 @@ function App() {
           <Route path='/blogs' element={<Blog />} />
           <Route path='/blog/:id' element={<BlogDetails />} />
           <Route path='/team' element={<Team />} />
-          
+          <Route path='/Developers' element={<Developers/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

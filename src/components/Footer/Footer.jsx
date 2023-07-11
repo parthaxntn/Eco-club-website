@@ -78,7 +78,7 @@ const Footer = () => {
                     <div className="box3">
                         {/* <i className="fa-solid fa-minus"></i> */}
                         <FaMinus color='rgba(5, 158, 5, 0.949)' />
-                        <Link to='/members'>Members</Link>
+                        <Link to='/Developers'>Members</Link>
                     </div>
                 </div>
                 <div className="mail_us">

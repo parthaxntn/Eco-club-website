@@ -1,0 +1,74 @@
+.developers-container {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .developers-container > .title {
+    padding-bottom: 0.6em;
+    position: relative;
+  }
+  
+  .developers-container > .title::before {
+    content: "";
+    width: 10rem;
+    height: 2px;
+    background-color: #43ab5f;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .activeYear {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 0.8em;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    padding: 0.4em;
+    width: max-content;
+    border-radius: 9em;
+    box-sizing: border-box;
+    box-shadow: 0.3px 0.3px 8px 0.2px rgb(72, 67, 67);
+    cursor: pointer;
+  }
+  
+  .dev-list {
+    padding-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 4em;
+  }
+  
+  .title {
+    color: rgb(25, 166, 25);
+    font-family: "Poppins";
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  
+  .active {
+    color: #43ab5f;
+  }
+  
+  @media (max-width: 510px) {
+    .dev-list {
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      gap: 0em;
+    }
+    .activeYear {
+      font-size: small;
+    }
+  }
+  
+  @media (max-width: 405px) {
+    .activeYear {
+      font-size: 0.7rem;
+    }
+  }
+  
