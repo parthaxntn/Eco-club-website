@@ -13,7 +13,7 @@ const Nox = () => {
           A weekly feed on nature
         </h3>
 
-        <p class="para"> Noixorgo is a weekly segment released by the Eco Club every sunday, which gives an
+        <p className="para"> Noixorgo is a weekly segment released by the Eco Club every sunday, which gives an
           insight on different environmental matters that have transpired in that week.
           This is one of the oldest segments of the club and has been running for almost two years;
           educating and creating environmental awarness among it's readers.

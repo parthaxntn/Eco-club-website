@@ -26,6 +26,9 @@
     color: #707070;
 }
 
+.d-block{
+    width: 100%;
+}
 
 .homeContent {
     text-align: justify;
@@ -185,7 +188,9 @@ i.fa-clock {
   }
 
 @media screen and (max-width: 540px) {
-    
+    .d-block{ 
+        height: 30em;
+    }
 }
 
 @media screen and (max-width: 480px) {

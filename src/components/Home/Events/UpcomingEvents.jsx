@@ -6,7 +6,7 @@ const UpcomingEvents = () => {
   return (
         <div className="col-sm-4 col-xs-12  py-3 py-sm-0">
             <div className="card card-shadow">
-              <img className="card-img-top" src={events} alt="Card cap" />
+              <img id='cards-img1' className="card-img-top" src={events} alt="Card cap" />
               <div className="card-body">
                 <h5 className="card-title">A walk for healthy environment</h5>
                 <div className="card-content">
