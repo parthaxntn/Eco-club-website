@@ -99,10 +99,10 @@
 
 
 #cardsT1{
-    font-size: 3vh;
+    font-size: 1.4rem;
     color: #333333;
     flex-grow: 0;
-    align-self: stretch;
+    align-self: left;
 }
 
 
@@ -201,4 +201,7 @@
     .card_s02 img, .card_s03 img {
       width: 100% !important;
     }
+    /* .cardsT1{
+      font-size: 1rem !important;
+    } */
   }

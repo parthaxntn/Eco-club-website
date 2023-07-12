@@ -7,19 +7,23 @@ const Gallery = () => {
     const eventPhotos = [
         {
             title: 'Swacchta Pakhwada',
-            image: 'swacchta-pakhwada.png'
+            image: 'swacchta-pakhwada.png',
+            alt: 'Swacchta Pakhwada'
         },
         {
             title: 'North-East Green Summit',
-            image: 'north-east-green-summit.png'
+            image: 'north-east-green-summit.png',
+            alt: 'North-East Green Summit'
         },
         {
             title: 'Gandhi Jayanti',
-            image: 'gandhi-jayanti.png'
+            image: 'gandhi-jayanti.png',
+            alt: 'Gandhi Jayanti'
         },
         {
             title: 'World Environment Day',
-            image: 'world-environment-day.jpg'
+            image: 'world-environment-day.jpg',
+            alt: 'World Environment Day'
         }
     ]
 
@@ -81,7 +85,7 @@ const Gallery = () => {
                     {eventPhotos.map((e) => {
                         return (
                             <div id='card1' className="card my-1 my-xl-0" style={{ width: '26rem'}}>
-                                <img src={`/imgs/Gallery/${e.image}`} className="card-img-top0" alt="Swacchta Pakhwada" />
+                                <img src={`/imgs/Gallery/${e.image}`} className="card-img-top0" alt={e.alt} />
                                 <div className="card-body">
                                     <p id='cardsT1' className="card-text">{e.title}</p>
                                 </div>
