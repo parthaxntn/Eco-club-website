@@ -14,11 +14,11 @@ const Home = () => {
   const mainRef = useRef(null);
   const thumbsRef = useRef(null);
 
-  useEffect(()=>{
-    if ( mainRef.current && thumbsRef.current && thumbsRef.current.splide ) {
-      mainRef.current.sync( thumbsRef.current.splide );
+  useEffect(() => {
+    if (mainRef.current && thumbsRef.current && thumbsRef.current.splide) {
+      mainRef.current.sync(thumbsRef.current.splide);
     }
-  },[])
+  }, [])
 
   // const renderSlides = () => {
   //   return generateSlides().map( slide => (
@@ -29,28 +29,62 @@ const Home = () => {
   // }
 
   const mainOptions = {
-    type      : 'loop',
-    perPage   : 1,
-    perMove   : 1,
-    gap       : '1rem',
+    type: 'fade',
+    perPage: 1,
+    perMove: 1,
+    gap: '1rem',
     pagination: false,
-    height    : 'auto',
-    width: '90%'
+    height: 'auto',
+    width: '90%',
+    
   };
 
   const thumbsOptions = {
-    type        : 'slide',
-    rewind      : true,
-    gap         : '1rem',
-    pagination  : false,
-    fixedWidth  : 110,
-    fixedHeight : 70,
-    cover       : true,
-    // focus       : 'center',
-    
+    type: 'slide',
+    rewind: true,
+    gap: '1rem',
+    pagination: false,
+    fixedWidth: 110,
+    fixedHeight: 70,
+    cover: true,
+    focus: 'center',
     isNavigation: true,
   };
 
+  const SplideData = [
+    {
+      src: "https://picsum.photos/1800/700?nature",
+      alt: "https://picsum.photos/1800/700?nature"
+    },
+    {
+      src: "https://picsum.photos/1800/700?nature",
+      alt: "https://picsum.photos/1800/700?nature"
+    },
+    {
+      src: "https://picsum.photos/1800/700?nature",
+      alt: "https://picsum.photos/1800/700?nature"
+    },
+    {
+      src: "https://picsum.photos/1800/700?nature",
+      alt: "https://picsum.photos/1800/700?nature"
+    },
+    {
+      src: "https://picsum.photos/1800/700?nature",
+      alt: "https://picsum.photos/1800/700?nature"
+    },
+    {
+      src: "https://picsum.photos/1800/700?nature",
+      alt: "https://picsum.photos/1800/700?nature"
+    },
+    {
+      src: "https://picsum.photos/1800/700?nature",
+      alt: "https://picsum.photos/1800/700?nature"
+    },
+    {
+      src: "https://picsum.photos/1800/700?nature",
+      alt: "https://picsum.photos/1800/700?nature"
+    }
+  ]
 
   return (
     <div className='home'>
@@ -95,7 +129,7 @@ const Home = () => {
         <h2 className='About'>From the Director's Desk</h2>
         <div className="row gx-5">
           <div className="col-lg-4 text-center">
-            <img src={director} className="img-fluid rounded-circle mb-4" widthalt="" alt='Director NIT Silchar'/>
+            <img src={director} className="img-fluid rounded-circle mb-4" widthalt="" alt='Director NIT Silchar' />
             <h5>Sivaji Bandyopadhyay</h5>
             <p>Director, Nit Silchar</p>
           </div>
@@ -126,9 +160,9 @@ const Home = () => {
       <section className="container">
         <h2>Achievements</h2>
         <div className="row gx-5">
-          <AchievementsCards/>
-          <AchievementsCards/>
-          <AchievementsCards/>
+          <AchievementsCards />
+          <AchievementsCards />
+          <AchievementsCards />
         </div>
       </section>
       {/* <!-- Achivements ends --> */}
@@ -137,8 +171,8 @@ const Home = () => {
       <section className="container">
         <h2>Green Initiatives</h2>
         <div className="row gx-5">
-          <GreenInitiatives/>
-          <GreenInitiatives/>
+          <GreenInitiatives />
+          <GreenInitiatives />
         </div>
       </section>
       {/* <!-- green initiatives ends --> */}
@@ -148,9 +182,9 @@ const Home = () => {
       <section className="container">
         <h2>Upcoming Events</h2>
         <div className="row gx-5">
-          <UpcomingEvents/>
-          <UpcomingEvents/>
-          <UpcomingEvents/>
+          <UpcomingEvents />
+          <UpcomingEvents />
+          <UpcomingEvents />
         </div>
       </section>
       {/* <!-- upcoming events ends --> */}
@@ -158,70 +192,34 @@ const Home = () => {
       <h2>Beauty of NITS</h2>
 
       <Splide
-          options={ mainOptions }
-          ref={ mainRef }
-          aria-labelledby="thumbnail-slider-example"
-        >
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" className='splide-img' alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-        </Splide>
+        options={mainOptions}
+        ref={mainRef}
+        aria-labelledby="thumbnail-slider-example"
+      >
+        {SplideData.map((item, key) => {
+          return (
+            <SplideSlide>
+              <img src={item.src} className='splide-img' alt={item.alt} />
+            </SplideSlide>
+          )
+        })}
+      </Splide>
 
-        <Splide
-          hasTrack={true}
-          options={ thumbsOptions }
-          ref={ thumbsRef }
-          aria-label="The carousel with thumbnails. Selecting a thumbnail will change the main carousel"
-        >
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="https://picsum.photos/1800/700?nature" alt="https://picsum.photos/1800/700" />
-          </SplideSlide>
-        </Splide>
+      <Splide
+        hasTrack={true}
+        options={thumbsOptions}
+        ref={thumbsRef}
+        aria-label="The carousel with thumbnails. Selecting a thumbnail will change the main carousel"
+      >
+        {SplideData.map((item, key) => {
+          return (
+            <SplideSlide>
+              <img src={item.src} className='splide-img' alt={item.alt} />
+            </SplideSlide>
+          )
+        })}
+      </Splide>
 
-
-      
     </div>
 
   )

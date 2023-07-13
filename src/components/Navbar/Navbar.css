@@ -70,8 +70,8 @@
   /* // margin: 2rem; */
   margin: auto;
   position: relative;
-
 }
+
 .nav-list .nav-button .nav-link {
   /* // margin: 5vw; */
   position: relative;
@@ -91,7 +91,7 @@
     transition: 0.35s;
   }
   
-  .home::after {
+  /* .home::after {
     background: var(--gdsc-blue-1-100);
   }
   
@@ -101,7 +101,7 @@
   
   .team::after {
     background: var(--gdsc-green-1-100);
-  }
+  } */
   
   .nav-button:hover::after {
     width: 100%;
@@ -134,9 +134,15 @@
 
 .hamlist li a{
   text-decoration: none;
-  color: black !important;
+  color: black;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
 }
-  
+
+  #sel{
+    color: rgb(48, 177, 82);
+  }
+
   .hamburg-sidebar{
     height: 100vh;
     position: fixed;
