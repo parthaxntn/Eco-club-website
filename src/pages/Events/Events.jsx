@@ -78,7 +78,8 @@ const Events = () => {
             <div className="event-page">
                 <div className="event-head">
 
-                    <h1 className='event-head-bottom'>Upcoming Events</h1>
+                    <h1 >Upcoming Events</h1>
+                    <span className='event-bottom'></span>
                 </div>
 
 

@@ -7,25 +7,35 @@
 
   .event-head {
     margin: .8rem auto 1.5rem auto;
+    display: flexbox;
+
     text-align: center;
   }
   
+  /* .event-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #43ab5f;
 
+    height: 0.2rem;
+
+  } */
+  
 
 
 
 .event-head h1 {
     color: #43ab5f;
     padding-bottom: 2vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    border-bottom: 0.25rem solid#43AB5F;
     text-align: center;
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     margin-top: 3rem;
-    margin-bottom: 3rem;
   }
   
 .event-landing{
@@ -120,7 +130,7 @@
   @media (max-width: 470px) {
     .description{
         width: 100%;
-        padding: 1%;
+        padding: 2%;
 
     }
     
@@ -129,7 +139,19 @@
   @media (max-width: 420px) {
     .description{
         width: 100%;
-        padding: 1%;
+        padding:2%;
+
+    }
+    
+  }
+
+  @media (max-width: 380px) {
+    .event-cards {
+      padding: 3%;
+    }
+    .description{
+        width: 100%;
+        padding:3%;
 
     }
     
