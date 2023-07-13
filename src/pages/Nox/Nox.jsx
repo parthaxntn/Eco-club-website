@@ -4,7 +4,7 @@ import PictureCard from './PictureCard'
 
 const Nox = () => {
   return (
-    <div className='nox text-center'>
+    <div className='nox text-center d-flex flex-column align-items-center'>
        
 
       <>
