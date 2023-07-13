@@ -1,5 +1,5 @@
 import React from 'react'
-import './Events.css'
+import './EventsMain.css'
 // import EventsCard from '../../components/Events/EventsCard'
 import Data from './Events.json'
 import GandhiJayanti from '../../Assets/Gandhi Jayanti.png'
@@ -75,20 +75,22 @@ import GandhiJayanti from '../../Assets/Gandhi Jayanti.png'
 const Events = () => {
     return (
         <>
-            <div className="main-event">
-                <div className="event-top">
-                    <h1>Upcoming Events</h1>
+            <div className="event-page">
+                <div className="event-head">
+
+                    <h1 >Upcoming Events</h1>
+                    <span className='event-bottom'></span>
                 </div>
 
 
-                <section className="first">
-                    <div className="event_box1">
+                <section className="event-landing">
+                    <div className="event-boxes">
                         
-                        <div className="card_box">
+                        <div className="event-card-boxes">
                             {Data.map(data => {
                                 return (
-                                    <div className="card">
-                                        <div className="images">
+                                    <div className="event-cards">
+                                        <div className="event-images">
                                             <img src={GandhiJayanti} alt="" />
                                         </div>
                                         <div className="description">
@@ -111,13 +113,13 @@ const Events = () => {
 
 
                     <div className="event_box2">
-                        <div className="event-top">
+                        <div className="event-head">
                             <h1>Past Events</h1>
                         </div>
-                        <div className="card_box">
+                        <div className="event-card-boxes">
                             {Data.map(data => {
                                 return (
-                                    <div className="card">
+                                    <div className="event-cards">
                                         <div className="images">
                                             <img src={GandhiJayanti} alt="" />
                                         </div>

@@ -1,0 +1,158 @@
+.event-page {
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: red; */
+  }
+
+
+  .event-head {
+    margin: .8rem auto 1.5rem auto;
+    display: flexbox;
+
+    text-align: center;
+  }
+  
+  /* .event-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #43ab5f;
+
+    height: 0.2rem;
+
+  } */
+  
+
+
+
+.event-head h1 {
+    color: #43ab5f;
+    padding-bottom: 2vh;
+    display: inline-block;
+    border-bottom: 0.25rem solid#43AB5F;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 3rem;
+  }
+  
+.event-landing{
+    padding-bottom: 4rem;
+
+}
+
+
+
+.event-card-boxes {
+    display: flex;
+    padding: 3rem;
+    flex-wrap: wrap;
+    padding: 2%;
+    width: 100%;
+    justify-content: center; /* Horizontally center all boxes */
+    align-items: center; /* Vertically center all boxes */
+  }
+  
+  .event-cards {
+    width: 33.33%;
+    
+     /* Display 3 boxes in a row */
+    padding: 1rem; /* Adjust padding as needed */
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a light box shadow */
+  }
+  
+  @media (max-width: 1140px) {
+    /* Media query for screen size <= 768px */
+    .event-cards {
+      width: 50%; /* Display 2 boxes in a row */
+    }
+  }
+  
+
+
+
+  @media (max-width: 780px) {
+    
+    /* Media query for screen size <= 480px */
+    .event-cards {
+      width: 60%;
+      padding: 2%;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+       /* Display 1 box per row */
+    }
+    .description{
+      width: 100%;
+    }
+    
+    
+  }
+
+  @media (max-width: 400px) {
+    .event-page {
+        width: 100%;
+        /* background-color: red; */
+      }
+    /* Media query for screen size <= 480px */
+    .event-cards {
+        padding: 1%;
+        padding-bottom: 3rem;
+      width: 100%; /* Display 1 box per row */
+    }
+    
+  }
+
+  
+  @media (max-width: 781px) {
+    .description{
+        width: 90%;
+        padding: 2%;
+
+    }
+    
+  }
+
+
+  
+  @media (max-width: 670px) {
+    .description{
+        width: 100%;
+        padding: 1%;
+
+    }
+    
+  }
+
+  @media (max-width: 470px) {
+    .description{
+        width: 100%;
+        padding: 2%;
+
+    }
+    
+  }
+
+  @media (max-width: 420px) {
+    .description{
+        width: 100%;
+        padding:2%;
+
+    }
+    
+  }
+
+  @media (max-width: 380px) {
+    .event-cards {
+      padding: 3%;
+    }
+    .description{
+        width: 100%;
+        padding:3%;
+
+    }
+    
+  }
