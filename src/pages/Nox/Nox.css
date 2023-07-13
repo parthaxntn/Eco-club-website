@@ -60,6 +60,7 @@
 
 .highlight .pic-card{
     width: 600px ;
+    align-items: center;
 }
 
 .pic-card img{
@@ -114,6 +115,10 @@
         margin-inline: 0.6em;
         text-align: justify;
         text-justify: inter-word;
+    }
+    .highlight{
+        width: 80%;
+        /* justify-self: center; */
     }
 }
 

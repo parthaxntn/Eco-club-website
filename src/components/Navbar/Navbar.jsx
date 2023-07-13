@@ -95,33 +95,33 @@ const Navbar = () => {
   
             <ul className="hamlist">
   
-              <li className="nav-button home">
-                <Link to="/" className="nav-link">
+              <li className="nav-button team">
+                <Link to="/" className="nav-link" id={path ==='/' ? 'sel' : ''}>
                   Home
                 </Link>
               </li>
-              <li className="nav-button projects">
-                <Link to="/nox" className="nav-link">
+              <li className="nav-button team">
+                <Link to="/nox" className="nav-link" id={path ==='/nox' ? 'sel' : ''}>
                   Noixorgo
                 </Link>
               </li>
               <li className="nav-button team">
-                <Link to="/gallery" className="nav-link">
+                <Link to="/gallery" className="nav-link" id={path ==='/gallery' ? 'sel' : ''}>
                   Gallery
                 </Link>
               </li>
               <li className="nav-button team">
-                <Link to="/events" className="nav-link">
+                <Link to="/events" className="nav-link" id={path ==='/events' ? 'sel' : ''}>
                   Events
                 </Link>
               </li>
               <li className="nav-button team">
-                <Link to="/blogs" className="nav-link">
+                <Link to="/blogs" className="nav-link" id={path ==='/blogs' ? 'sel' : ''}>
                   Blog
                 </Link>
               </li>
               <li className="nav-button team">
-                <Link to="/team" className="nav-link">
+                <Link to="/team" className="nav-link" id={path ==='/team' ? 'sel' : ''}>
                   Team
                 </Link>
               </li>

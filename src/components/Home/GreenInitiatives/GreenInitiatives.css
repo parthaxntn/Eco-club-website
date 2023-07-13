@@ -1,5 +1,9 @@
-@media screen and (max-width: 500px) {
+#cards-img1{
+    width: auto;
+}
+
+@media screen and (max-width: 520px) {
     .card-text{
-        font-size: 22px;
+        font-size: 20px;
     }
 }
